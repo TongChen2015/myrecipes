@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+gem 'pg', '0.21.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -40,7 +40,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.6'
   gem 'capybara'
-  gem 'pg'
+  gem 'pg', '0.21.0'
   gem 'pry'
 end
 
@@ -54,10 +54,11 @@ group :development do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-cucumber'
+  gem 'pg', '0.21.0'
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '0.21.0'
   gem 'rails_12factor'
 end
 
