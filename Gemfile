@@ -40,6 +40,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.6'
   gem 'capybara'
+  gem 'sqlite3'
+  gem 'pry'
 end
 
 group :development do
@@ -53,6 +55,12 @@ group :development do
   gem 'guard-rspec'
   gem 'guard-cucumber'
 end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
