@@ -264,7 +264,7 @@ DEPENDENCIES
   bootstrap-will_paginate (= 1.0.0)
   byebug
   capybara
-  carrierwave (= 1.2.2)
+  carrierwave (~> 1.2.2)
   coffee-rails (~> 4.2)
   guard
   guard-cucumber
