@@ -69,3 +69,38 @@ h2 {
     border-top: 1px solid #eaeaea;
     color: #777;
 }
+
+.chef_info {
+    margin-top: 10px;
+}
+
+.gravatar{
+    border-radius: 15px;
+}
+
+.well {
+    background-color: #EDEDED;
+}
+
+input, textarea, select, .uneditable-input {
+    border: 1px solid #d2f2f2;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input {
+    height: auto !important;
+}
+
+span.picture {
+    margin-top: 10px;
+    input {
+        border: 0;
+    }
+}
+
+.show_recipe {
+    margin: 10px 10px 10px 10px;
+}
+
