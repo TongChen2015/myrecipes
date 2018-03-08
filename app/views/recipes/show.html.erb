@@ -31,8 +31,15 @@
             
         </div>
     </div>
-    <p>Style: <%= render @recipe.styles %></p>
-    <p>Ingredient: <%= render @recipe.ingredients %></p>
+    <% if @recipe.styles.any? %>
+      <p>Style: <%= render @recipe.styles %></p>
+    <% elsif logged_in? and @recipe.chef == current_user %>
+      <%= link_to "Add style/ingredients", edit_recipe_path(@recipe), class: "btn btn-success pull-right" %>
+    <% end %>
+    <% if @recipe.ingredients.any? %>
+      <p>Ingredient: <%= render @recipe.ingredients %></p>
+    <% end %>  
+    
 </div>
 
 
